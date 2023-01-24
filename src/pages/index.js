@@ -4,25 +4,16 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/ahsan.webp';
+
 import config from '../../config';
 const IndexPage = () => (
-  <Layout>
+  <Layout fullMenu>
+
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        <ul className="actions special">
-          <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll>
-          </li>
-        </ul>
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
@@ -31,35 +22,35 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
-    <section id="one" className="wrapper style1 special">
+    <section id="one" className="wrapper style2 special">
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            30+ years of experience in the field of Electronic Design Automation
             <br />
-            eget augue amet aliquet nisl cep donec
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+          Ahsan joined LSI Logic, Milpitas, CA, after completing his Ph.D. <br />
+          He subsequently joined Synopsys Inc, Mountain View, CA, in the early 1990’s. 
+          <br />
+          He served as a Vice President of Engineering at Synopsys Inc. for over 19 years, 
+          <br />
+          leading development of several market leading products.
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
+            <span className="icon fa-gem major style4">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon solid fa-laptop major style5">
               <span className="label">Ipsum</span>
             </span>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon solid fa-code major style6">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -67,58 +58,60 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
+
+    <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          Ahsan Bootehsaz received a B.Sc. degree in Electrical and Electronic Engineering from Nottingham University, the UK. 
+          <br />
+          He subsequently earned a Ph.D. in Microelectronics and Design Automation from the University of Manchester Institute of Science and Technology, the UK.
           </p>
         </div>
       </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic2} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-    </section>
 
-    <section id="three" className="wrapper style3 special">
+
+
+    <section className="wrapper style5">
+        <div className="inner">
+          <h2>About Dr. Ahsan Bootehsaz</h2>
+          <p>
+           He moved to Silicon Valley in the late 1980’s to start his career in the 
+          Semiconductor / Electronic Design Automation industry. He moved to Silicon Valley in the late 1980’s 
+          to start his career in the Semiconductor / Electronic Design Automation industry.
+          </p>
+
+          <hr />
+
+          <p>
+          He joined Synopsys Inc. (Mountain View) in 1992 as an R&D Manager leading the development of next 
+          generation EDA products. He became a member of the company’s executive team in 1998 as the Vice 
+          President of Engineering for the design analysis product line. Over the course of the next two 
+          decades, he built and led an engineering organization of several hundred software developers delivering 
+          several market leading products in the EDA space.
+          </p>
+
+          <p>
+          Ahsan assumed responsibility for the Software Engineering, managing the software Development Operation (Dev Ops), 
+          product release and life cycle management, corporate quality and software entitlement and security for the EDA 
+          divisions of the company, with a combined annual review of over $1.6 billion, supporting the development activities 
+          of several thousand software engineers globally. During his tenure at Synopsys, while based in Mountain View, CA, 
+          he built and managed global engineering teams based in China, Taiwan, India, Ireland, France and several cities in the US.
+          </p>
+
+          <hr />
+
+          <p>
+          In 2017, Dr. Bootehsaz moved to Los Angeles. He is currently a technology consultant / advisor for startup companies.
+          </p>
+        </div>
+      </section>
+
+
+
+    {/* <section id="three" className="wrapper style2 special">
       <div className="inner">
         <header className="major">
           <h2>Accumsan mus tortor nunc aliquet</h2>
@@ -175,26 +168,25 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Contact Ahsan Bootehsaz</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Dr. Ahsan Bootehsaz is available to connect via LinkedIn and Email.
           </p>
         </header>
         <ul className="actions stacked">
           <li>
             <a href="/#" className="button fit primary">
-              Activate
+            <li className="icon fa-linkedin"> LinkedIn</li>
             </a>
           </li>
           <li>
             <a href="/#" className="button fit">
-              Learn More
+            <li className="icon fa-paper-plane"> Mail</li>
             </a>
           </li>
         </ul>

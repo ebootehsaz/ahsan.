@@ -1059,15 +1059,21 @@
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
+		padding-top: 3em;
+		padding-bottom: 3em;
 
 		.image {
 			@include vendor('order', '1');
 			border-radius: 0;
-			width: 40%;
+			// width: 10%;
+			// margin: 0 auto;
+			margin: 0 auto;
+			margin-left: -10%;
 
 			img {
-				border-radius: 0;
+				border-radius: 50px;
 				width: 100%;
+				max-width: 20em;
 			}
 		}
 
@@ -1076,6 +1082,8 @@
 			@include vendor('order', '2');
 			max-width: 48em;
 			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		&:nth-child(2n) {
@@ -1092,7 +1100,8 @@
 
 		@include breakpoint('<=large') {
 			.image {
-				width: 45%;
+				// width: 45%;
+				margin-left: -5%;
 			}
 
 			.content {
@@ -1101,14 +1110,15 @@
 		}
 
 		@include breakpoint('<=medium') {
-			display: block;
+			// display: block;
 
 			br {
 				display: none;
 			}
 
 			.image {
-				width: 100%;
+				// width: 100%;
+				margin-left: 0;
 			}
 
 			.content {
@@ -1578,15 +1588,24 @@
 /* Banner */
 
 	#banner {
+		// @include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.7), rgba(0,0,0,0))', 'url("../images/banner.jpg")'));
+		
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'center');
 		cursor: default;
-		height: 100vh;
+		height: 100vh !important;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		//
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover !important;
+		@include breakpoint('<=medium') {
+			height: 94vh;
+		}
 
 		h2 {
 			@include vendor('transform', 'scale(1)');
@@ -1658,11 +1677,11 @@
 				bottom: 4em;
 				content: '';
 				display: block;
-				height: 1.5em;
+				height: 2em;
 				left: 50%;
-				margin: 0 0 0 -0.75em;
+				margin: 0 0 0 -.8em;
 				position: absolute;
-				width: 1.5em;
+				width: 2em;
 			}
 		}
 
@@ -1695,7 +1714,8 @@
 			}
 
 			.more {
-				display: none;
+				// display: none;
+				margin-bottom: 4em;
 			}
 		}
 	}
@@ -1820,13 +1840,13 @@
 		}
 	}
 
-	body.is-mobile {
-		#main {
-			> header {
-				background-attachment: scroll;
-			}
-		}
-	}
+	// body.is-mobile {
+	// 	#main {
+	// 		> header {
+	// 			background-attachment: scroll;
+	// 		}
+	// 	}
+	// }
 
 /* Footer */
 
@@ -1899,7 +1919,7 @@
 
 	body.landing, .main-body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0.5))', 'url("../images/pic1.webp")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1912,22 +1932,37 @@
 		}
 	}
 
-	body.is-mobile {
-		&.landing {
+	// body.is-mobile {
+	// 	&.landing {
+	// 		#page-wrapper {
+	// 			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0.5))', 'url("../images/pic2.webp")'));
+	// 			background-size: 100vh;
+	// 		}
+
+	// 		#banner,
+	// 		.wrapper.style4 {
+	// 			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
+	// 			background-position: center center;
+	// 			background-repeat: no-repeat;
+	// 			background-size: cover;
+
+	// 		}
+
+	// 		#footer {
+	// 			background-color: darken(_palette(bg), 8);
+	// 		}
+	// 	}
+	// }
+
+	@include breakpoint('<=medium') {
+		body.landing, .main-body.landing {
 			#page-wrapper {
-				background: none;
-			}
-
-			#banner,
-			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-
-			#footer {
-				background-color: darken(_palette(bg), 8);
+			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0.6))', 'url("../images/pic1.webp")'));
+			// background-attachment: fixed;
+			background-position: center center;
+			background-repeat: repeat;
+			background-size: 90vh;
+			padding-top: 0;
 			}
 		}
 	}

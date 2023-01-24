@@ -1,28 +1,22 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
-  manifestName: 'Spectral',
+  siteTitle: 'Ahsan Bootehsaz Portfolio', // <title>
+  manifestName: 'Ahsan Bootehsaz',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#21262e',
+  manifestThemeColor: '#21262e',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  pathPrefix: ``, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Ahsan Bootehsaz',
+  subHeading: 'PhD, Microelectronics and Design Automation',
   // social
   socialLinks: [
     {
       style: 'brands',
-      icon: 'fa-github',
+      icon: 'fa-linkedin',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      url: 'https://linkedin.com/',
     },
     {
       style: 'solid',
