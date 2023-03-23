@@ -87,8 +87,7 @@ const IndexPage = () => (
           <h2>About Dr. Ahsan Bootehsaz</h2>
           <p>
            He moved to Silicon Valley in the late 1980’s to start his career in the 
-          Semiconductor / Electronic Design Automation industry. He moved to Silicon Valley in the late 1980’s 
-          to start his career in the Semiconductor / Electronic Design Automation industry.
+          Semiconductor / Electronic Design Automation industry. 
           </p>
 
           <hr />
