@@ -16,13 +16,7 @@ module.exports = {
       style: 'brands',
       icon: 'fa-linkedin',
       name: 'Github',
-      url: 'https://linkedin.com/',
-    },
-    {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:test@example.com',
+      url: 'https://www.linkedin.com/in/ahsanbootehsaz/',
     },
   ],
 };

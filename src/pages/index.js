@@ -58,17 +58,25 @@ const IndexPage = () => (
       </div>
     </section>
 
-
     <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="" />
         </div>
         <div className="content">
+          {/* <p>
+          Ahsan Bootehsaz received a B.Sc. degree in Electrical and Electronic Engineering from Nottingham University, the UK. 
+          <br/>
+          <br/>
+           He subsequently earned a Ph.D. in Microelectronics and Design Automation from the University of Manchester Institute of Science and Technology, the UK.
+          </p> */}
+          <b>
           <p>
           Ahsan Bootehsaz received a B.Sc. degree in Electrical and Electronic Engineering from Nottingham University, the UK. 
-          <br />
-          He subsequently earned a Ph.D. in Microelectronics and Design Automation from the University of Manchester Institute of Science and Technology, the UK.
+          <br/>
+          <br/>
+           He subsequently earned a Ph.D. in Microelectronics and Design Automation from the University of Manchester Institute of Science and Technology, the UK.
           </p>
+          </b>
         </div>
       </section>
 
@@ -110,85 +118,25 @@ const IndexPage = () => (
       </section>
 
 
-
-    {/* <section id="three" className="wrapper style2 special">
-      <div className="inner">
-        <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
-        </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section> */}
-
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
           <h2>Contact Ahsan Bootehsaz</h2>
-          <p>
-            Dr. Ahsan Bootehsaz is available to connect via LinkedIn and Email.
-          </p>
+          {/* <p>
+            <b>Dr. Ahsan Bootehsaz is available to connect and message via LinkedIn.</b>
+          </p> */}
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
+            <a href="https://www.linkedin.com/in/ahsanbootehsaz/" className="button fit primary">
             <li className="icon fa-linkedin"> LinkedIn</li>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="/#" className="button fit">
             <li className="icon fa-paper-plane"> Mail</li>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>

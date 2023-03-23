@@ -756,7 +756,7 @@
 		@include breakpoint('<=xsmall') {
 			&:not(.fixed) {
 				@include vendor('flex-direction', 'column');
-				margin-left: 0;
+				margin-left: 0 auto; // modded
 				width: 100% !important;
 
 				li {
@@ -1078,7 +1078,7 @@
 		}
 
 		.content {
-			@include padding(2em, 4em);
+			@include padding(2em, 2em);
 			@include vendor('order', '2');
 			max-width: 48em;
 			width: 60%;
@@ -1099,6 +1099,7 @@
 		}
 
 		@include breakpoint('<=large') {
+			@include vendor('flex-direction', 'column');
 			.image {
 				// width: 45%;
 				margin-left: -5%;
@@ -1111,27 +1112,26 @@
 
 		@include breakpoint('<=medium') {
 			// display: block;
-
-			br {
-				display: none;
-			}
+			flex-direction: column !important;
 
 			.image {
 				// width: 100%;
-				margin-left: 0;
+				margin: 2em auto;
+				order: -1;
 			}
 
 			.content {
-				@include padding(4em, 3em);
+				@include padding(0em, 0em);
 				max-width: none;
 				text-align: center;
 				width: 100%;
+				order: 1;
 			}
 		}
 
 		@include breakpoint('<=small') {
 			.content {
-				@include padding(3em, 2em);
+				@include padding(0em, 1em);
 			}
 		}
 	}
